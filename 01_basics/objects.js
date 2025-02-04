@@ -55,12 +55,28 @@
 
 // console.log(regularUser.fullname.userFullNmae.firstName)
 
-const obj1 = { 1: "a", 2: "b"}
-const obj2 = { 3: "c", 4: "d", 5: "e" }
+// const obj1 = { 1: "a", 2: "b"}
+// const obj2 = { 3: "c", 4: "d", 5: "e" }
 
-//const obj3 = Object.assign(obj1, obj2)
-const obj3 = {...obj1,...obj2} //spread operator
+// //const obj3 = Object.assign(obj1, obj2)
+// const obj3 = {...obj1,...obj2} //spread operator
 
-console.log(obj1)
-console.log(obj2)
-console.log(obj3)
+// console.log(obj1)
+// console.log(obj2)
+// console.log(obj3)
+
+
+//de-strusturing
+
+const course = {
+    name: "JavaScript",
+    duration: 10,
+    instructor: "John Doe"
+}
+const { instructor: ins } = course
+//console.log(instructor)
+console.log(ins)
+// {
+//     "name": "JavaScript",
+//     "price": "feree"
+// }
